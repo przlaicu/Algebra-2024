@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Liste</title>
+    </head>
+
+
+    <body>
+        <h1>Liste u HTML-u</h1>
+
+        <h2>Redne (brojčane) liste</h2>
+
+        <!-- Orderd list <ol> -->
+            <ol >
+                <li>Italija</li>
+                <li>Francusa</li>
+                <li>Gračka</li>
+                <li>Španjolska</li>
+                <li>SAD</li>
+                <li>Turska</li>
+            </ol>
+
+            <!-- <ol> se po defaultu prikazuje sa arapskim brojevima od 1 do n, ako želim promjeniti onda moram staviti tag type="A" da se prikazuje A,B,C itd -->
+            <ol type="A">
+                <li>Zagreb</li>
+                <li>Rijeka</li>
+                <li>Split</li>
+                <li>Dubrovnik</li>
+            </ol>
+
+            <ol type="a">
+                <li>Zagreb</li>
+                <li>Rijeka</li>
+                <li>Split</li>
+                <li>Dubrovnik</li>
+            </ol>
+
+            <h4>Type atribut</h4>
+            <ol type="I">
+                <li>Hrvatska</li>
+                <li>Francuska</li>
+                <li type="A">Grčka</li> <!--Ako želimo promjeniti prikaz oznake za pojedini item iz liste samo stavimo pod taj list item type atribut kako bi ga promjenili i prikazuje koji je poredu npr u ovom primjeru je C-->
+                <li>Španjolska</li>
+            </ol>
+
+            <h4>Start atribut</h4>
+            <ol type="A" start="3"> <!--Ako želim da starta od 3 mjesta brojčano samo stavimo atribut start u <ol> element start index-->
+                <li>Italija</li>
+                <li>Španjolska</li>
+                <li>Grčka</li>
+            </ol>
+
+            <h4>Value atribut</h4>
+
+            <ol type="1">
+                <li>Italija</li>
+                <li>Francuska</li>
+                <li>Španjiolska</li> <!-- Mijenjanje indexa list itema sa value tagom, value samo prima number-->
+                <li>Grčka</li>
+                <li value="1">SAD</li>
+            </ol>
+
+            <ol type="A">
+                <li>Italija</li>
+                <li>Francuska</li>
+                <li value="1">Španjiolska</li>
+            </ol>
+
+            <ol type="a" reversed> <!-- Obrnuti redosljed sa reversed tagom bool -->
+                <li>Španjolska</li>
+                <li>Grčka</li>
+                <li>Hrvatska</li>
+                <li>Slovenija</li>
+            </ol>
+
+            <h4>Neuređena lista</h4>
+
+            <ul>
+                <li>Grčka</li>
+                <li>Španjiolska</li>
+                <li>Italija</li>
+                <li>Hrvatska</li>
+            </ul>
+
+            <ul type="square"> <!--Default je kružić disc promjena na kvadratiće je square-->
+                <li>Hrvatska</li>
+                <li>Hrvatska</li>
+                <li>Hrvatska</li>
+            </ul>
+
+            <h3>Opisne liste</h3>
+
+            <dl>
+                <dt>London</dt>
+                <dd>Glavni grad Engleske</dd>
+
+                <dt>Paris</dt>
+                <dd>Glavni grad Francuske</dd>
+
+                <dt>Rim</dt>
+                <dd>Glavni grad Italije</dd>
+
+                <dt>Zagreb</dt>
+                <dd>Glavni grad Hrvatske</dd>
+            </dl>
+
+            <h3>Ugniježdene liste</h3>
+
+            <ul type="square">
+                <li>Afrika</li>
+                <li>Azija</li>
+                <li>Europa
+
+                    <ol>
+                        <li>Francuska</li>
+                        <li>Španjolska
+
+                            <ol type="a">
+                                <li>Madrid</li>
+                                <li>Barcelona</li>
+                                <li>Bilaboo</li>
+                                <li>...</li>
+                            </ol>
+
+                        </li>
+                        <li>Italija</li>
+                        <li>...</li>
+                    </ol>
+
+                </li>
+            </ul>
+
+    </body>
+
+</html>
