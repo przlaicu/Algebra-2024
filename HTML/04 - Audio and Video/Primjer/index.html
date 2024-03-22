@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedijski sadržaj u HTML-u</title>
+</head>
+<body>
+    <h2>Audio sadržaj</h2>
+
+    <!-- za autoplay potrebne i postavke u browser-u -->
+    <audio src="../../Media/audio/in3s.mp3" controls autoplay loop></audio>
+
+    <audio controls>
+
+        <!-- type MIME type media type/ file type example ==> type="audio/ogg" -->
+        <source src="../../Media/audio/in3s.ogg" type="audio/ogg">
+
+        <source src="../../Media/audio/in3s.mp3" type="audio/mp3">
+
+        <p>Vaš preglednik ne podržava audio sadržaj</p>
+
+    </audio>
+
+    <!-- Video sadržaj -->
+
+    <video src="../../Media/video/mountains.mp4" muted controls width="300"></video>
+
+    <!--Background video nema kontrole-->
+    <video width="400" autoplay loop muted poster="https://images.pexels.com/photos/17832540/pexels-photo-17832540/free-photo-of-a-woman-in-a-white-dress-is-standing-on-the-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+
+        <source src="../../Media/video/mountains.mov" type="video/mov"/>
+        <source src="../../Media/video/mountains.mp4" type="video/mp4"/>
+        <p>Vaš preglednik ne podržava video sadržaj</p>
+    </video>
+
+</body>
+</html>
