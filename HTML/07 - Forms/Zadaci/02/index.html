@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 02</title>
+</head>
+
+<body>
+
+    <h1>Ma feedback form</h1>
+
+    <form>
+
+        <ul>
+            <li>
+                <label for="name">Name</label>
+                <input id="name" type="text">
+            </li>
+            <li>
+                <label for="mail">Email</label>
+                <input id="mmail" type="email">
+            </li>
+            <li>
+                <label for="password">Password</label>
+                <input id="password" type="password">
+            </li>
+
+            <li>
+                Please check all births that apply to you:
+
+                <ul>
+                    <li>
+                        <label for="birth" type="checkbox">Angry</label>
+                        <input id="birth" type="checkbox" checked>
+                    </li>
+
+                    <li>
+                        <label for="birth" type="checkbox">Sad</label>
+                        <input id="birth" type="checkbox">
+                    </li>
+
+                    <li>
+                        <label for="birth" type="checkbox">Happy</label>
+                        <input id="birth" type="checkbox">
+                    </li>
+                    <li>
+                        <label for="birth" type="checkbox">Ambivalent</label>
+                        <input id="birth" type="checkbox">
+                    </li>
+
+                </ul>
+
+            <li>
+                How satisfied where you with our service ?
+
+                <ul>
+                    <li>
+                        <label for="satisfied">Very satisfied</label>
+                        <input id="satisfied" type="radio" name="satisfied" checked>
+                    </li>
+
+                    <li>
+                        <label for="satisfied">Satisfied</label>
+                        <input id="satisfied" type="radio" name="satisfied">
+                    </li>
+
+                    <li>
+                        <label for="satisfied">Didn't care</label>
+                        <input id="satisfied" type="radio" name="satisfied">
+                    </li>
+                    <li>
+                        <label for="satisfied">Disatisfied</label>
+                        <input id="satisfied" type="radio" name="satisfied">
+                    </li>
+                    <li>
+                        <label for="satisfied">Very Disatisfied</label>
+                        <input id="satisfied" type="radio" name="satisfied">
+                    </li>
+
+                </ul>
+
+            <li>
+                <label for="comments">Further Comments: </label>
+                <textarea id="comment" maxlength="80" cols="45" rows="10"></textarea>
+            </li>
+
+            <li>
+                <label for="photo">Bio photo: </label>
+                <input id="photo" type="file" />
+            </li>
+
+            <li>
+                <label for="city">Loction visited: </label> <br />
+
+                <select id="city" name="city">
+                    <option value="london">London, UK</option>
+                    <option value="paris">Paris, FR</option>
+                    <option value="berlin">Berlin, GR</option>
+                    <option value="zagreb">Zagreb. HR</option>
+                </select>
+            </li>
+
+            <li>
+                <input type="submit" value="Submit" />
+            </li>
+
+        </ul>
+
+    </form>
+
+</body>
+
+</html>
