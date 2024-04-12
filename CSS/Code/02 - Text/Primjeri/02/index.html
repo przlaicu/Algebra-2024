@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svojstva za uređivanje fontova</title>
+
+    <style>
+        /* Samo ako precizno to želim */
+        h1 {
+            font-size: 48px;
+        }
+
+        /* 1em je 16px zadna vrijednost u odnosu na roditeljski element ako body ima 20px onda je ovaj 20 * 2.5em za bilo koju veličinu ekrana default je 16px */
+        h2 {
+            font-size: 2.5em;
+        }
+
+
+        /*% se gleda u odnosu na body. Kada body ima font size od 30px, vrijesnodt ovog pravila bila bi 150% *(od) 30px = 45px (30 + 15) zadano je 16px*/
+        h3 {
+            font-size: 150%;
+        }
+
+        /* Medium je zadana vrijednost to je 16px */
+        h4 {
+            font-size: large;
+        }
+
+        p {}
+    </style>
+
+</head>
+
+<body>
+    <h1>Lorem impsum</h1>
+    <h2>Lorem impsum</h2>
+    <h3>Lorem impsum</h3>
+    <h4>Lorem ipsum bl bla bla</h4>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto minus, enim consequatur doloremque quia
+        incidunt nisi consectetur ad cum illum, at aliquam omnis mollitia qui molestiae nesciunt ex! Nemo, esse.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor a quaerat quo dolorem ducimus pariatur
+        perspiciatis rem, tempora consectetur repellendus, corporis dignissimos exercitationem porro illo, adipisci quod
+        nobis inventore nostrum.
+    </p>
+</body>
+
+</html>
