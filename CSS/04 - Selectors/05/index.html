@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo-klase / Pseudo-Elementi</title>
+    <style>
+        body {
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: green;
+            text-decoration: underline;
+            cursor: help;
+        }
+
+        input:focus {
+            color: white;
+            background-color: blueviolet;
+        }
+
+        /* kada želimo ubaciti sadržaj nakon sadržaja elementa */
+        a::after {
+            content: ' Link ';
+        }
+
+        /* kada želimo ubaciti sadržaj prije sadržaja elementa */
+        a::before {
+            content: ' Blee ';
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="#">Lorem Ipsum dolor</a>
+        </li>
+
+        <li>
+            <a href="#">Lorem Ipsum dolor</a>
+        </li>
+
+        <li>
+            <a href="#">Lorem Ipsum dolor</a>
+        </li>
+
+        <li>
+            <a href="#">Lorem Ipsum dolor</a>
+        </li>
+
+        <li>
+            <a href="#">Lorem Ipsum dolor</a>
+        </li>
+
+        <li>
+            <a href="#">Lorem Ipsum dolor</a>
+        </li>
+    </ul>
+
+    <input type="text" placeholder="Unesite ime">
+</body>
+
+</html>
