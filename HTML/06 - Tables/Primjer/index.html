@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tablice</title>
+</head>
+
+<body>
+    <h1>Tablice</h1>
+
+    <table border="1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <table border="1">
+        <!-- caption mora biti prvi element ako ga stavljamo-->
+        <caption>
+            Rezultati azvršnog ispita
+        </caption>
+        <!-- Zaglavlje tablice je napisano unutar <th> tagakoja s enalazi unutar tr taga -->
+        <tr>
+            <th>Redni broj</th>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Zanimanje</th>
+            <th>Broj ostvarenih bodova na ispitu</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Maja</td>
+            <td>Majnić</td>
+            <td>Web Designer</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Pero</td>
+            <td>Perić</td>
+            <td>Poštar</td>
+            <td>72</td>
+        </tr>
+
+        <tr>
+            <td>3.</td>
+            <td>Ana</td>
+            <td>Anić</td>
+            <td>Diša</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Mirko</td>
+            <td>Mirkić</td>
+            <td>Kod Kolinde za 6000 eur</td>
+            <td>10000</td>
+        </tr>
+    </table>
+
+    <hr />
+
+    <table border="1">
+        <!-- koristimo kada želimo sadržaj grupirati sadžaj tablice -->
+        <thead>
+            <tr>
+                <th>Namjernica</th>
+                <th>Količina</th>
+                <th>Predviđena potrošnja</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Trešnje</td>
+                <td>5kg</td>
+                <td>1.5 EUR</td>
+            </tr>
+
+            <tr>
+                <td>Breskve</td>
+                <td>15kg</td>
+                <td>2 EUR</td>
+            </tr>
+            <tr>
+                <td>Marelice</td>
+                <td>10kg</td>
+                <td>0.5 EUR</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Ukupno: </td>
+                <td>16 kg</td>
+                <td>6,16 EUR</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <hr />
+    <!-- Složene tablice -->
+
+    <h1>Složene tablice</h1>
+
+    <table border="1">
+
+        <tr>
+            <!-- Proširivanje ćelije colspan atribut upisujem broj koji označava broj ćelija -->
+            <td colspan="3">Red 1 ćelija 1 <small>(2 i 3)</small></td>
+        </tr>
+        <tr>
+            <td>Red 2 ćelija 4</td>
+            <td>Red 2 ćelija 5</td>
+            <td>Red 2 ćelija 6</td>
+        </tr>
+
+        <tr>
+            <td>Red 3 ćelija 7</td>
+            <td colspan="2">Red 3 ćelija 8 <small>(9)</small></td>
+        </tr>
+
+    </table>
+
+    <hr />
+
+    <table border="1">
+
+        <!-- sa rowspan specificiramo broj ćelija koje će mo zauzeti -->
+        <tr>
+            <td rowspan="3">Red 1 ćelija 1</td>
+            <td>Red 1 ćelija 2</td>
+            <td>Red 1 ćelija 3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Red 2 ćelija 5</td>
+            <td>Red 2 ćelija 6</td>
+        </tr>
+        <tr>
+            <td>Red 3 ćelija</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
