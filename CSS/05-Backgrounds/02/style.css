@@ -1,0 +1,18 @@
+
+body {
+    font-family: Tahome, sans-serif;
+    font-size: 14px;
+    color: #333;
+
+    background-color: #ddd;
+    background-image: url(../images/butterfly.png);
+
+    background-repeat: no-repeat; /**/
+
+    background-position: center center; /* position x position y*/
+
+    background-attachment: fixed; /*scrool fixed*/
+
+    background-size: 25%; /* auto lenght cover contain u % i px*/
+
+}
