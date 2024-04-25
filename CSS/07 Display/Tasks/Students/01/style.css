@@ -1,0 +1,16 @@
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+p {
+    border: 1px solid #333;
+    background-color: lavender;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 15px 15px;
+    width: 33.33%;
+    margin-left: -4px; /* U šraksi se ne radi */
+}

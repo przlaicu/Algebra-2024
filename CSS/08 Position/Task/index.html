@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+
+        .box1 {
+            background-color: brown;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .box2 {
+            background-color: aqua;
+            width: 150px;
+            height: 150px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+        }
+        
+        .box3 {
+            background-color: burlywood;
+            width: 150px;
+            height: 150px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            z-index: 2;
+        }
+        
+        .box4 {
+            background-color: chartreuse;
+            width: 150px;
+            height: 150px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            top: 45px;
+            left: 45px;
+            position: absolute;
+            z-index: 3;
+        }
+        
+        .box5 {
+            background-color: blue;
+            width: 150px;
+            height: 150px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            top: 60px;
+            left: 60px;
+            position: absolute;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+
+</html>
