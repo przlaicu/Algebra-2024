@@ -8,59 +8,63 @@
     <title>Position</title>
     <style>
 
+        div:not(:nth-child(1)) {
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+
+        body {
+            margin: 0;
+        }
+
         .box1 {
             background-color: brown;
-            width: 500px;
-            height: 500px;
+            width: 400px;
+            height: 400px;
             position: relative;
-            z-index: 1;
+            z-index: 0;
+            top: 0;
+            left: 0;
         }
         
         .box2 {
             background-color: aqua;
-            width: 150px;
-            height: 150px;
-            border-top-right-radius: 25px;
-            border-bottom-left-radius: 25px;
+            width: 200px;
+            height: 200px;
             position: absolute;
-            top: 10px;
-            left: 10px;
-            z-index: 1;
+            top: 0;
+            left: 0;
+            z-index: 4;
         }
         
         .box3 {
             background-color: burlywood;
-            width: 150px;
-            height: 150px;
-            border-top-right-radius: 25px;
-            border-bottom-left-radius: 25px;
+            width: 200px;
+            height: 200px;
             position: absolute;
-            top: 25px;
-            left: 25px;
-            z-index: 2;
+            top: 50px;
+            left: 50px;
+            z-index: 3;
         }
         
         .box4 {
             background-color: chartreuse;
-            width: 150px;
-            height: 150px;
-            border-top-right-radius: 25px;
-            border-bottom-left-radius: 25px;
-            top: 45px;
-            left: 45px;
+            width: 200px;
+            height: 200px;
+            top: 100px;
+            left: 100px;
             position: absolute;
-            z-index: 3;
+            z-index: 2;
         }
         
         .box5 {
             background-color: blue;
-            width: 150px;
-            height: 150px;
-            border-top-right-radius: 25px;
-            border-bottom-left-radius: 25px;
-            top: 60px;
-            left: 60px;
+            width: 200px;
+            height: 200px;
+            top: 150px;
+            left: 150px;
             position: absolute;
+            z-index: 1;
         }
 
     </style>
