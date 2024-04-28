@@ -1,11 +1,12 @@
 * {
-    margin: 0;
+    margin: 1px;
     box-sizing: border-box;
 }
 
 body {
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 .wrapper {
@@ -18,14 +19,23 @@ body {
     border: 1px solid #666;
     padding: 1em;
     text-align: center;
-    width: 100%;
-    /*pitati*/
-    height: 93vh;
-    /*pitati*/
-    margin: 1em;
+    width: 500px;
+    height: 100px;
+    margin: 2.5px;
 }
 
 .flex-container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*pitati*/
+.flex-item {
+    flex-grow: 1;
+}
+
+/*pitati*/
+.flex-item:nth-child(10) {
+    flex-shrink: 100;
 }

@@ -18,18 +18,13 @@ body {
     border: 1px solid #666;
     padding: 1em;
     text-align: center;
-    width: 90%;
-    height: 150px;
-}
-
-.flex-container {
-    display: flex;
-    flex-direction: column;
+    width: 99%;
+    height: 17vh;
+    margin: 1em;
 }
 
 .flex-item {
-    flex-grow: 5;
-    justify-content: ;
+    display: flex;
+    flex-direction: row-reverse;
+    /*pitati*/
 }
-
-
