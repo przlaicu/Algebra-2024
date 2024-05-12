@@ -26,16 +26,12 @@ body {
 
 .flex-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /*pitati*/
 .flex-item {
-    flex-grow: 1;
-}
-
-/*pitati*/
-.flex-item:nth-child(10) {
-    flex-shrink: 100;
+    flex-basis: 33%;
+    height: 23%;
 }

@@ -1,0 +1,66 @@
+$color1: #eee;
+$color2: #524d4d;
+$color3: #701414;
+
+$font: "Tahoma, sans-serif";
+
+@mixin flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@mixin button {
+    a {
+        background-color: $color3;
+        color: $color1;
+        padding: 10px;
+        margin: 1em;
+
+        &:hover {
+            background-color: $color1;
+            color: $color3;
+        }
+    }
+}
+
+body {
+    background-color: $color1;
+    color: $color2;
+    font-family: $font;
+    margin: 0;
+    @include flex-container();
+}
+
+header,
+footer {
+
+    background-color: $color4;
+    color: $color1;
+
+    li {
+        background-color: $color3;
+        color: $color1;
+        text-align: center;
+        margin: 15px;
+        padding: 5px;
+        width: 150px;
+    }
+
+    li:hover {
+        background-color: $color4;
+    }
+
+    a {
+        @include button();
+    }
+
+    a:hover {
+        @include button();
+        background-color: $color4;
+    }
+}
+
+li {
+    list-style: none;
+}
