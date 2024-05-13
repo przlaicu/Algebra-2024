@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(assets/media/clouds.jpg);
+}
+
+.logo {
+  width: 300px;
+  height: 200px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 250px;
+}
+.flex-container img {
+  height: 200px;
+}/*# sourceMappingURL=style.css.map */

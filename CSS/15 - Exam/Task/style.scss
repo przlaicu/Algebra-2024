@@ -1,16 +1,28 @@
 
-@import "/Task/base/reset";
-@import "/abstracts/mixins";
+@import "base/reset";
+@import "abstracts/mixins";
 
 
 body{
-    background-image: url(/Task/assets/media/clouds.jpg);
-    @include initiate-flex(flex, row, space-between);
+    background-image: url(assets/media/clouds.jpg);
+    
     
 }
 
 .logo {
-    width: 150px;
+    width: 300px;
     height: 200px;
 }
+
+.flex-container {
+    @include initiate-flex(flex, row, center, space-around);
+
+    height: 250px;
+
+    img {
+        height: 200px;
+    }
+}
+
+
 
