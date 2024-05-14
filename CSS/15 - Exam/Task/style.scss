@@ -1,17 +1,18 @@
-
 @import "base/reset";
 @import "abstracts/mixins";
 
 
-body{
+body {
     background-image: url(assets/media/clouds.jpg);
-    
-    
+
+
 }
 
 .logo {
     width: 300px;
-    height: 200px;
+    padding: 50px;
+    margin-top: 80vh;
+    float: right;
 }
 
 .flex-container {
@@ -21,8 +22,58 @@ body{
 
     img {
         height: 200px;
+        margin-left: 350px;
+        margin-top: 95vh;
+        float: right;
     }
 }
 
 
+@keyframes animacija1 {
 
+    from {
+        transform: translateX(-300%);
+    }
+
+    to {
+        transform: translateX(35%);
+    }
+
+}
+
+.img1 {
+    animation: animacija1 3s ease-out forwards;
+}
+
+
+@keyframes animacija2 {
+
+    from {
+        transform: translatey(-300%);
+    }
+
+    to {
+        transform: translatey(25%);
+    }
+
+}
+
+.img2 {
+    animation: animacija2 3s ease-out forwards;
+}
+
+@keyframes animacija3 {
+
+    from {
+        transform: translatex(300%);
+    }
+
+    to {
+        transform: translatex(60%);
+    }
+
+}
+
+.img3 {
+    animation: animacija3 3s ease-out forwards;
+}
