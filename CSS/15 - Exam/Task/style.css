@@ -9,9 +9,9 @@ body {
 
 .logo {
   width: 300px;
-  padding: 50px;
-  margin-top: 80vh;
-  float: right;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 
 .flex-container {
