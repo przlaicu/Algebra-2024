@@ -83,3 +83,40 @@ switch(date) {
         console.log('today is Saturday');
         break;
 }
+
+// For loop
+
+/*
+// for(var i = 1; i <= 10; i++) {
+
+//     console.log('Current counter is ' + i);
+
+// }
+*/
+
+for(var i = 1; i < 3; i++) {
+    console.log('Current counter is i ' + i);
+
+    for(var j = 1; j < 5; j++) {
+    console.log('Current counter is j ' + j);
+    }
+}
+
+/*
+ ctrl + c + k --> comment
+
+ ctrl + c + u --> uncomment
+*/
+
+// Do while
+
+var count = 0;
+
+do {
+    // Do napravi ovo kod ispod
+    console.log(count);
+    count++; // povećaj za 1
+}while(count < 10); // dokle god je counter manji od 10
+
+
+
