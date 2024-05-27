@@ -6,7 +6,7 @@ var average = 0;
 
 for (var i = 0; i <= numbers.length; i++) {
     number = numbers[i];
-    if (number % 2 == 0) {
+    if (number % 2 === 0) {
         parni.push(number);
         calculated = number + calculated;
         average = calculated / parni.length;
