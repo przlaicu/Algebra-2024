@@ -17,15 +17,15 @@ var library = [
     },
 ];
 
-function reedBookStatus(library) {
+function reedBookStatus(obj) {
     console.log('Knjige koje ste pročitali');
     console.log('-----------------------------------------------------------');
 
-    for (var i = 0; i < library.length; i++) {
-        if (library.readingStatus) {
-            console.log(`Knjiga ${library.title} od autora ${library.author} je pročitana`);
+    for (var i = 0; i < obj.length; i++) {
+        if (obj.readingStatus) {
+            console.log(`Knjiga ${obj[i].title} od autora ${obj[i].author} je pročitana`);
         } else {
-            console.log(`Knjiga  ${library.title}  od autora ${library.author} nije pročitana`);
+            console.log(`Knjiga  ${obj[i].title}  od autora ${obj[i].author} nije pročitana`);
         }
     }
 }
