@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Karlovac</title>
+</head>
+
+<body>
+    <!-- h1 -->
+    <div class="description">Grad na <span>4 rijeke</span></div>
+    <!-- info -->
+    <footer id="footer">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <!--
+            <li></li>
+            <li></li>
+            -->
+        </ul>
+    </footer>
+
+    <script>
+        var h1 = document.createElement('h1');
+        h1.innerHTML = 'Hello Africa';
+        document.body.before(h1);
+
+        var div = document.createElement('div');
+        var footer = document.getElementById('footer');
+        div.className = 'info';
+        
+        footer.prepend(div);
+        
+/*
+        var li = document.createElement('li');
+        var ul = document.getElementsByName('ul');
+
+        console.log(ul);
+        
+*/
+    </script>
+</body>
+
+</html>
