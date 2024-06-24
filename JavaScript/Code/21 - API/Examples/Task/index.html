@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> Fun fack about mačkama </h1>
+    <br></br>
+
+    <p id="catFact"></p>
+
+    <button onclick="getFact()"> Get a new fact </button>
+
+    <script>
+    
+    const apiUrl = 'https://catfact.ninja/fact';
+
+    function getFact() 
+    {
+        fetch(apiUrl)
+        .then(response => response.json())
+        .then(data, document.getElementById('catFact').innerHTML);
+    }
+
+    getFact();
+
+    </script>
+</body>
+</html>
