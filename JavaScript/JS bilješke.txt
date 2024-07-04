@@ -1,0 +1,145 @@
+w3Schools - Reserved - popis riječi kojima ne smijemo nazivati varijable
+
+Instalirati ekstenzziju Code runner!
+
+Komentari u JS 
+
+// komentar u jednoim redu
+
+/* Komentar u više redova  
+*Ekstra zvjezdica za svaki red
+*/ 
+
+CTRL + CK je za zakomentirati
+CTRL + CU je za otkomentirati
+
+
+JSDoc - standard komentiranja koji služi za kreiranje dokumentacije
+
+Programiz JS compiler
+
+Varijabla može imati samo jednu vrijednost!!! - ako opet kasnije u kodu navedeno istu s drugom vrijednosti, druga će pregaziti prvu
+
+Tippvi podataka u JS:
+
+- Primitivni - ne mogu se mijenjati kasnije u kodu vrijednosti: brojevi, tekst(String), Boolean vrijednost, undefined
+- Objektni - objekti, nizovi, funkcije, null: možemo im mijenjati vrijednosti
+
+BROJEVI
+integer - cjelobrojna vrijednost (bez decimalnih)
+float - broj s decimalnim vrijednostima : svi br su u JS floating point tip broja
+bigint - dodano da bi se spremili veliki brojevi (nećemo to raditi)
+
+TEKST
+- u JS se sprema u string tipu podatka (svejedno je jesu jednostruki ili dvostruki, možemo ih koristiti kombinirano '')
+- prepoznajemo ga po navodnicima: npr 
+var x= "Lorem ipsum dolor sit amet"
+
+BOOLEAN
+true ili false
+- truthy i falsey (npr. kod number data typea sve osim 0 je true, prazan string je falsey, NaN; = not a number (false), objekti su true, 
+
+NULL i UNDEFINED
+
+- null je ključna riječ koja se ibično koristi da naznači odsutnost neke vrijednosti
+- undefined je vrijednost varijabli koje nisu inicijalizirane
+
+typeof operator - vartit će nam vrijednost određenog datatypea
+
+JS automatske konverzije naučiti napamet 
+()
+
+btw. U JS je -- daju plus
+
+STRING
+- niz znakova (0 ili više) okružen navodnicima
+- navodnici mogu biti jednostruki ili dvostruki
+- brojanje pozicije znaka u stringu počinje od nule!
+
+Konkatenacija stringa:
+- spajanje dva ili više stringova, u JS se koristi operator +
+- trim miče praznine na početku i kraju stringa
+
+
+TIPOVI OPERATORA
+
+Logički 
+
+&&  -> AND
+||  -> OR
+!   -> NOT 
+
+Aritmetički
++ - * / % ** ++ --
+
+Operatori dodijeljivanja
+= += -= *= /= %= **=
+
+Relacijski 
+== loose equality operator
+=== operator checks whether its two operands are equal
+
+...
+
+Bitovni (bitwise)
+
+Operator konkatenacije
+ ...
+
+
+Tipovi operatora
+- unarni: var x +=1;
+- binarni: var x= y+1;
+- ternarni (bitan za React jer tamo ne možemo koristiti IF ELSE)
+	var x= y ? y : x + 1; (formula je uvjet i dva kejsa)
+
+	koristi se ovako: 
+		var student = true
+		var type = student == true ? "ovo je student" : "ne, nije student";
+inkrement
+x++ ili ++x - ponaša se različito ovisno o kontekstu 
+
+dekrement
+x++ ili x--
+
+UVJETI 
+Jednostavni IF - else
+If- else if- else (može biti samo jedan else if)
+
+Switch
+- alternaiva kompliciranim if izjavama (umjesto ponavljanje else if, kad god nam treba više od 3 provjere)
+case 1 BLOK KODA break;
+case 2 BLOK KODA break;
+case 3 BLOK KODA break;
+
+Smjer provjere ide od gore prema dolje.
+Switch ćemo koristiti npr. za kviz da evaluiramo koliko je korisnik imao bodova i u kojem je percentageu
+
+PETLJA
+while, do ... while
+
+za while je moiguće da se nikad neće izvršiti (jer prvo evaluira, onda radi)
+do... while će se izvršiti bar jednom (jer prvo radi onda evaluira)
+
+ARRAY (NIZ)
+- radi se o sortirnoj zbirci, array je tipa objekt, prepoznajemo ga po uglatim zagradama, podatke u arrayu odvajamo zarezom
+- mi ćemo raditi literale ()
+- elementi iz arraya dohvaćaju se brojkom, počevši od nule, ali ugl ih nema smisla hardkodati, izvlačit ćemo ih kroz petlju
+array matrix - kad ima array unutar arraya, prva vrijednost označava koji aeeay, a drugi koje mjesto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
