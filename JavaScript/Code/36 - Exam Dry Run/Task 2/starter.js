@@ -16,7 +16,7 @@
 // Variable Scope & Functions
 function addBook(title, author) {
     // Function scope
-
+    
     // String interpolation
 
     // Return an object
@@ -24,10 +24,10 @@ function addBook(title, author) {
 }
 
 // Global variable
-var totalBooks // implement global variable
+var totalBooks = 1000; // implement global variable
 
 // Arrays
-let genres = // implement the array
+let genres = ['Fiction', 'Non-Fiction', 'Science', 'History', 'Biography']// implement the array
 
 // Switch
 function getCategoryDiscount(genre) {
@@ -42,14 +42,23 @@ let library = {
 // Converting JSON into an object
 let bookJSON = '{"title":"JavaScript Basics","author":"John Doe","year":2023}';
 // TODO
+var bookObject = JSON.parse(bookJSON);
+console.log('Zadatak prvi')
 console.log(bookObject.title); // Output: JavaScript Basics
+
 
 // Converting an object into JSON
 // TODO
+
+console.log('Zadatak drugi')
+var bookJSON2 = JSON.stringify(bookObject);
 console.log(bookJSON2); // Output: {"title":"JavaScript Basics","author":"John Doe","year":2023}
 
 // Constructor
 function Book(title, author, genre) {
+    this.title = title;
+    this.author = author;
+    this.genre
 }
 
 // Prototypes
@@ -78,7 +87,8 @@ function main() {
     let book2 = new Book("A Brief History of Time", "Stephen Hawking", "Science");
 
     // Add books to library
-    
+    addBook(book1);
+    addBook(book2);
 
     // Borrow a book
 
