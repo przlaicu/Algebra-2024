@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handlebars</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  </head>
+  <body>
+    <div id="target"></div>
+
+    <script id="template" type="text/x-handlebars-template">
+
+      <h1>This qoute is from{{movie}}</h1>
+
+      <h2>Use the <strong>{{power}}</strong>, {{name}}</h2>
+
+    </script>
+
+    <script>
+      window.onload = function () {
+        //Dohvati template
+        const template = document.getElementById('template').innerHTML;
+
+        // Complie the template
+        const compiled_template = Handlebars.compile(template);
+
+        // Prikazati podatke unutar template
+        const render = compiled_template({
+          name: 'Luke', 
+          power: 'Force',
+          movie: 'Star wars'
+        });
+        document.getElementById('target').innerHTML = render;
+      };
+
+      fetch('https://api.edu.skuflic.com/users')
+      .then((response) => {
+        
+      })
+
+    </script>
+  </body>
+</html>
