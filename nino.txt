@@ -1,1 +1,5 @@
 api.edu.skuflic.com
+
+web server
+vercel
+cloude flare
