@@ -1,1 +1,4 @@
 api.edu.skuflic.com
+
+vercel -- > samo jedan kod u repu da bi se bulid app
+shadcn.com --> slično kao bootstrap
