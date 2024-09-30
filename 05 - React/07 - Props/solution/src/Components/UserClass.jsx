@@ -4,12 +4,12 @@ import { Component } from 'react';
 
 export default class UserClass(props) extends Component {
     
-    render(  
+    render()  {
         return(
             <div>
             <p>{props.name}</p>
             <p>{props.year}</p>
             </div>
-            );
-    );
+        );
+    }
 }
