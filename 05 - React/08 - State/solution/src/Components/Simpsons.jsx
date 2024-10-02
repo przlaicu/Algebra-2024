@@ -26,13 +26,12 @@ export default class Simpsons extends Component{
     render() {
         return (
             <div>
-                
                 <img src={this.state.imageUrl}/>
                 <p>Name: {this.state.name}</p>
                 <p>Best Frined is: {this.state.bestFriend}</p>
                 <p>Likes School: {this.state.likeSchool}</p>
                 <p>Background color: {this.state.backgroundColor}</p>
-                <button onClick={this.changeSate()}>Change Simpsons</button>
+                <button onClick={this.changeSate}>Change Simpsons</button>
             </div>
         );
     }
