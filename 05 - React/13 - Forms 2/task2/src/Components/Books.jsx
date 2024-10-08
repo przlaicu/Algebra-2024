@@ -22,13 +22,11 @@ export default function Books() {
     return (
         <div>
             <h1>Books in library</h1>
-            <ul style={{ display: "flex", flex-direction: "row", listStyle: 'none'}}>
-                <li>
+            <div style={{ display: "flex", flexDirection: "row", listStyle: 'none' }}>
                 {books.map(books =>
                     <Book key={books.id} name={books.bookName} author={books.author} />
                 )}
-                </li>
-            </ul>
+            </div>
         </div>
     );
 
