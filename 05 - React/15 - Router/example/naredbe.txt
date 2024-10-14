@@ -1,0 +1,4 @@
+
+npx create-react-app example --> zadnje je ime app-app
+
+npm install react-router-dom --> instalacija react router-a
