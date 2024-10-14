@@ -10,7 +10,7 @@ export default function User() {
     return(
         <div>
             <h1>User</h1>
-            <p>This is user {user} </p>
+            <p>This is user {user}, hello Africa </p>
         </div>
     );
 }
