@@ -20,6 +20,7 @@ export default function Quiz() {
   const [selectedQuiz, setSelectedQuiz] = useState(null);
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
  
   function selectQuiz(choise) {
     const fetchData = async () => {
@@ -44,6 +45,9 @@ export default function Quiz() {
     } else {
         alert('Wrong');
     }
+
+    setCurrentQuestion(currentQuestion + 1);
+
   }
 
   return (
