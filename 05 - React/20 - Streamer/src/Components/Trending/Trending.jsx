@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Loading from '../Error/Error';
 
 export default function Trending({
   type,
@@ -40,18 +41,9 @@ export default function Trending({
 
   return (
     <>
-      {loading && (
-        <div className='loading'>
-          <div className='spinner-border' />
-        </div>
-      )}
+      {loading && <Loading />}
 
-      {error && (
-        <div className='error'>
-          <h1>That's an error!</h1>
-          <p>Details: {error?.message}</p>
-        </div>
-      )}
+      {error && <Error error={error?.message}/>}
 
       {!error && !loading && (
         <div className={`trending ${display}`}>
